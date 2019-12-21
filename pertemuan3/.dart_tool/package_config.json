@@ -1,0 +1,20 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "args",
+      "rootUri": "file:///Users/zivlab/.pub-cache/hosted/pub.dartlang.org/args-1.5.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "demo1",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    }
+  ],
+  "generated": "2019-12-21T04:30:30.968413Z",
+  "generator": "pub",
+  "generatorVersion": "2.7.0"
+}
