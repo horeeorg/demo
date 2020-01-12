@@ -2,7 +2,6 @@ import "dart:io";
 
 main()
 {
-  var a ;
   int inputNumber = 0;
 
   print("Input Number: ");
@@ -16,13 +15,15 @@ main()
     if (inputNumber == 0) 
       print('Input harus lebih besar 0');
 
-    int h = 0;
-    for(int i=0; i < inputNumber; i++) {
-      for(int k=0; k < inputNumber - i; k++) {
+    int helper = 0;
+    for(int lineCount=0; lineCount < inputNumber; lineCount++) {
+      
+      for(int spaceCount=0; spaceCount < inputNumber - lineCount; spaceCount++) {
         stdout.write(' ');
       }
-      h++;
-      for(int j=0;j < h + i;j++){
+
+      helper++;
+      for(int starCount=0; starCount < helper + lineCount; starCount++){
         stdout.write('*');
       }
       
@@ -30,9 +31,6 @@ main()
     }
   }
   on FormatException {
-    print ('Input harus angka');
-  }
-  on Exception {
-   print ('Input harus angka'); 
+    print ('Your input should be number');
   }
 }
